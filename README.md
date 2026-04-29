@@ -38,9 +38,9 @@ Chaque horloge analogique possède des aiguilles animées (heures, minutes, seco
 
 ## 🌐 Lien vers la page GitHub Pages
 
-> 🔗 [**Accéder à l’horloge universelle**](https://ahmedkahouli.github.io/NOM_DU_REPO/)
+> 🔗 [**Accéder à l’horloge universelle**](https://ahmedkahouli17-hub.github.io/nv/)
 
-*(Remplacez `VOTRE_NOM_UTILISATEUR` et `NOM_DU_REPO` par les vrais identifiants une fois le projet en ligne)*
+*(Remplacez `ahmed kahouli` et `horloge` par les vrais identifiants une fois le projet en ligne)*
 
 ---
 
