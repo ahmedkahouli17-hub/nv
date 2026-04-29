@@ -35,6 +35,8 @@ h1 {
   background: #111827;
   padding: 15px;
   border-radius: 10px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 select, button {
@@ -52,6 +54,19 @@ button {
 
 button:hover {
   transform: scale(1.02);
+}
+
+.controls label {
+  background: #0f1724;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  border: 1px solid #7dd3fc60;
+}
+
+.controls label:hover {
+  background: #7dd3fc20;
 }
 
 #clocks {
@@ -73,7 +88,7 @@ button:hover {
   color: #7dd3fc;
 }
 
-/* ===== STYLES ANALOGIQUES (NOUVEAU) ===== */
+/* Styles analogiques */
 .analog {
   width: 150px;
   height: 150px;
@@ -126,11 +141,6 @@ button:hover {
   height: 60px;
   background: #ff6b6b;
   transform: translateX(-50%) rotate(0deg);
-}
-
-/* Graduations du cadran */
-.analog {
-  position: relative;
 }
 
 /* Styles numériques */

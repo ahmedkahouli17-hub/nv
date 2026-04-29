@@ -16,6 +16,15 @@
     <div class="controls">
       <select id="tzSelect"></select>
       <button id="addTz">+ Ajouter</button>
+      
+      <!-- NOUVEAU : Checkboxes pour choisir l'affichage -->
+      <label style="display: flex; align-items: center; gap: 5px;">
+        <input type="checkbox" id="showAnalog" checked> Analogique
+      </label>
+      <label style="display: flex; align-items: center; gap: 5px;">
+        <input type="checkbox" id="showDigital" checked> Numérique
+      </label>
+      
       <select id="hourFormat">
         <option value="24">24h</option>
         <option value="12">12h</option>

@@ -3,6 +3,8 @@ const addBtn = document.getElementById('addTz');
 const clocks = document.getElementById('clocks');
 const localNow = document.getElementById('localNow');
 const hourFormat = document.getElementById('hourFormat');
+const showAnalog = document.getElementById('showAnalog');
+const showDigital = document.getElementById('showDigital');
 
 // Liste des fuseaux horaires
 const zones = ['UTC', 'Europe/Paris', 'America/New_York', 'Asia/Tokyo', 'Africa/Tunis'];
@@ -72,6 +74,10 @@ function createClock(zone) {
   card.appendChild(digital);
   clocks.appendChild(card);
   
+  // Appliquer l'état initial des checkboxes
+  analog.style.display = showAnalog.checked ? 'block' : 'none';
+  digital.style.display = showDigital.checked ? 'block' : 'none';
+  
   return { zone, digital, analog, hourHand, minuteHand, secondHand };
 }
 
@@ -124,6 +130,19 @@ function update() {
     }
   });
 }
+
+// ===== GESTION DES CHECKBOXES  =====
+showAnalog.addEventListener('change', () => {
+  document.querySelectorAll('.analog').forEach(el => {
+    el.style.display = showAnalog.checked ? 'block' : 'none';
+  });
+});
+
+showDigital.addEventListener('change', () => {
+  document.querySelectorAll('.digital').forEach(el => {
+    el.style.display = showDigital.checked ? 'block' : 'none';
+  });
+});
 
 // Mettre à jour toutes les secondes
 setInterval(update, 1000);
