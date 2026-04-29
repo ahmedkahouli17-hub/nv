@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Horloge Numérique</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Horloge Numérique</h1>
+      <p>Temps local : <span id="localNow">--:--:--</span></p>
+    </header>
+    
+    <div class="controls">
+      <select id="tzSelect"></select>
+      <button id="addTz">+ Ajouter</button>
+      <select id="hourFormat">
+        <option value="24">24h</option>
+        <option value="12">12h</option>
+      </select>
+    </div>
+    
+    <main id="clocks"></main>
+    
+    <footer>
+      <p>Made by Ahmed Kahouli</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
